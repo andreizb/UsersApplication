@@ -1,6 +1,6 @@
 package com.test.security;
 
-import com.test.model.User;
+import com.test.model.Account;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;
@@ -12,7 +12,7 @@ import java.util.Collection;
 @Getter
 public class SecurityUser implements UserDetails {
 
-    private final User user;
+    private final Account user;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

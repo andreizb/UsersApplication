@@ -13,6 +13,7 @@ import org.springframework.security.oauth2.provider.token.TokenStore;
 @EnableWebSecurity
 @EnableResourceServer
 public class OAuth2SecurityConfig extends ResourceServerConfigurerAdapter {
+
     private final TokenStore tokenStore;
 
     @Autowired
@@ -28,6 +29,8 @@ public class OAuth2SecurityConfig extends ResourceServerConfigurerAdapter {
     @Override
     public void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.apply(CommonSecurityConfig.commonSecurityConfiguration())
-                .and().authorizeRequests().anyRequest().authenticated();
+                .and().authorizeRequests()
+                .anyRequest().authenticated();
     }
+
 }

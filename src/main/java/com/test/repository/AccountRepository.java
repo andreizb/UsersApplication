@@ -1,14 +1,14 @@
 package com.test.repository;
 
-import com.test.model.User;
+import com.test.model.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface AccountRepository extends JpaRepository<Account, Long> {
 
-    public Optional<User> getByUsername(String username);
+    Optional<Account> getByUsername(String username);
 
 }

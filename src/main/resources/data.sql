@@ -1,1 +1,1 @@
-INSERT INTO USERS_DATA (ID, USERNAME, PASSWORD, EMAIL) VALUES (0, 'andreizb', '$2y$12$XTWtwA9PujcrG9E8/T7fKe4kIb4Ro.C0I.SRhpb9KeTzsoJhggjeq', 'andrei.zbarcea@test.com');
+INSERT INTO ACCOUNTS (ID, USERNAME, PASSWORD) VALUES (0, 'andreizb', '$2y$12$XTWtwA9PujcrG9E8/T7fKe4kIb4Ro.C0I.SRhpb9KeTzsoJhggjeq');
