@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "dc8d680b-2bfb-425a-a128-0c35fd46c2fa",
+		"name": "UsersApplication Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all localities from a county (based on county code)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTI5OTk0OTQsInVzZXJfbmFtZSI6ImFuZHJlaXpiIiwianRpIjoiMjk3NGNjZmUtMTBhZi00YThkLTk4NTktNTEwYWYyNjY0YzFjIiwiY2xpZW50X2lkIjoidGVzdCIsInNjb3BlIjpbIndlYmNsaWVudCJdfQ.Dciiz4PwS2Kg0_71U3_EOZMCp7ry5uxQByagoh5x2CoBQSB7nYvB4kH3k9OoUOhc_4o5PUzlUiZ9o9g5PGBMUukPEoOsp_XPrm20hcm1hjInbWppAWa7VzE7MieTVNekD5eNPEAe0TKnMDjZ6SwbiMd25DkJgoRpCEv26CBQRBaTdCNHQTH249JeSBDXyOJ6E3neqzf2x6ZE72T-hfE4SjbcC_KauGRzBLvU57N4ZgjRmJEtd63EZKiovwPxhuabFmPQZ0ucA28cX1jzSkxlUS5sRx7tgtLw7N4eOZITw4fHYkC8aRZ_2TKccaVx9HQAPJLHG6TObRFzqeCPV5pxdg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/locality/AR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"locality",
+						"AR"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users from a given locality",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTI5OTgyNzIsInVzZXJfbmFtZSI6ImFuZHJlaXpiIiwianRpIjoiM2EwNzQwN2YtYjQyYi00MGE1LTkzZmItZjQ4NjJkYWI5NDA4IiwiY2xpZW50X2lkIjoidGVzdCIsInNjb3BlIjpbIndlYmNsaWVudCJdfQ.Bxi8QagywyYiSH6JIgtxtLot7M3UC8qVvDvdGSTuwMVJXl7y9jR-pZZDX9nWNRZj-PV6j6dkGtzJ7j31r-a19gnJSmH-6h7oY5doAOfcm9z6c3u3_cZ4-3St6zD3y6bX3td2LatyHyK84VCafsPwV1DwXIKm7D65veRlNZpkzRPyMBB58w8zivq9L3l9uekVc7YxHm4q6Zgvqxm5uc5zELr4jdiBpFClCOVUHm-HR4c86F3MEDR8bVY9drShw16az5hSyZll7d59kLFHrhFkSJ9VzvbN7lvjj_2kIbxsTQzHkHaFVgIxbIt9_P7CNcpaJwf38W0lQ4LSy-904BQnjA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user/locality/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"locality",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users from a given county",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTI5OTg0NjksInVzZXJfbmFtZSI6ImFuZHJlaXpiIiwianRpIjoiMjFkYzliNTMtMTRmNy00ZTgzLTlmYzUtNDAxMDlmYjNjY2U4IiwiY2xpZW50X2lkIjoidGVzdCIsInNjb3BlIjpbIndlYmNsaWVudCJdfQ.SmOTzgp-rls5v8RXB1XBYpFzp1ORp7J88CIQ5XpveTr6wundxjRjSnsWUQMfYVA5FuFCVgyeJrUFT1m2xfouE1KoTi4lsEUNKoCZSHbtHGZKZEYeycwpSDNRbQBZSVVfziPwI1RdcLfL9Uwz_WBLvDbVEbnpkHnfsusqvu700obF2joCnc5WLaI9vxI5Vhbgpy5sbN_ksjSBheSpwiMZnQlIQle_eW-XVrZ7_EeLbRTDyzJqXoXTaLfvfxptTUzsTYDCVoPo_-6UcPW4KFxbFqcs-4sv472Tb7nlRI7dAomGOMbO5rb_z7GZbl0IMg1cGLSOk8q0RG9gVnz71CGhjQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user/county/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"county",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JWT authentication",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "test",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/login?grant_type=password&username=andreizb&password=1234&scope=webclient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "grant_type",
+							"value": "password"
+						},
+						{
+							"key": "username",
+							"value": "andreizb"
+						},
+						{
+							"key": "password",
+							"value": "1234"
+						},
+						{
+							"key": "scope",
+							"value": "webclient"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding user to database",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTI5OTg0NjksInVzZXJfbmFtZSI6ImFuZHJlaXpiIiwianRpIjoiMjFkYzliNTMtMTRmNy00ZTgzLTlmYzUtNDAxMDlmYjNjY2U4IiwiY2xpZW50X2lkIjoidGVzdCIsInNjb3BlIjpbIndlYmNsaWVudCJdfQ.SmOTzgp-rls5v8RXB1XBYpFzp1ORp7J88CIQ5XpveTr6wundxjRjSnsWUQMfYVA5FuFCVgyeJrUFT1m2xfouE1KoTi4lsEUNKoCZSHbtHGZKZEYeycwpSDNRbQBZSVVfziPwI1RdcLfL9Uwz_WBLvDbVEbnpkHnfsusqvu700obF2joCnc5WLaI9vxI5Vhbgpy5sbN_ksjSBheSpwiMZnQlIQle_eW-XVrZ7_EeLbRTDyzJqXoXTaLfvfxptTUzsTYDCVoPo_-6UcPW4KFxbFqcs-4sv472Tb7nlRI7dAomGOMbO5rb_z7GZbl0IMg1cGLSOk8q0RG9gVnz71CGhjQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\": \"Andrei\",\r\n    \"email\": \"andrei.zrb@icloud.com\",\r\n    \"countyId\": 1,\r\n    \"localityId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTI5OTcyNDQsInVzZXJfbmFtZSI6ImFuZHJlaXpiIiwianRpIjoiOWRmMzg1OGUtNmYwNi00ODBkLWI3ZTAtODI4MTUwYzY5N2Q1IiwiY2xpZW50X2lkIjoidGVzdCIsInNjb3BlIjpbIndlYmNsaWVudCJdfQ.MdyolCsL06XSS3vDF9UvH0F015KX_alv0hhSj6EsA3j6CpTdPrarUI_BeZtOh7rgqQGOb-AOHp-f30iRVIwwFk7aM0Pw5nyE1ugMTM_rNSTLMizNNCr3f8tXKj0fFbwgMPC2cayMSuCNMUj9NfIJWjtUzheVNGAvQUeu-UlIethFDGxaUIJz6ICuYGmBiQOkplZyVz_39i1GCy3Lr3yR4X9g7f67AFQkRrzTWQqRlvaancFEcal-owoCTaVAcpSb0_X8Ni_aKtZ0YRUBgRSLBiz8-S8GVG9d3Gsg25lrCk4zSEDklmXBg76kfZr4O1R43WfisOCXGNJQNGfyUtgIvQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\": \"Andrei\",\r\n    \"email\": \"andrei.zrb@icloud.com\",\r\n    \"countyId\": 1,\r\n    \"localityId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a specific user from the database",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTI5OTg0NjksInVzZXJfbmFtZSI6ImFuZHJlaXpiIiwianRpIjoiMjFkYzliNTMtMTRmNy00ZTgzLTlmYzUtNDAxMDlmYjNjY2U4IiwiY2xpZW50X2lkIjoidGVzdCIsInNjb3BlIjpbIndlYmNsaWVudCJdfQ.SmOTzgp-rls5v8RXB1XBYpFzp1ORp7J88CIQ5XpveTr6wundxjRjSnsWUQMfYVA5FuFCVgyeJrUFT1m2xfouE1KoTi4lsEUNKoCZSHbtHGZKZEYeycwpSDNRbQBZSVVfziPwI1RdcLfL9Uwz_WBLvDbVEbnpkHnfsusqvu700obF2joCnc5WLaI9vxI5Vhbgpy5sbN_ksjSBheSpwiMZnQlIQle_eW-XVrZ7_EeLbRTDyzJqXoXTaLfvfxptTUzsTYDCVoPo_-6UcPW4KFxbFqcs-4sv472Tb7nlRI7dAomGOMbO5rb_z7GZbl0IMg1cGLSOk8q0RG9gVnz71CGhjQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
